@@ -6,7 +6,7 @@ PS Classic Store is a catalog browser and downloader for the PlayStation Classic
 
 ## Download
 
-[Download PS Classic Store 0.1.48 for USB](https://github.com/ZoneJ561/PS-Classic-Store/releases/download/v0.1.48/PS-Classic-Store-USB-0.1.48.zip)
+[Download PS Classic Store 0.1.49 for USB](https://github.com/ZoneJ561/PS-Classic-Store/releases/download/v0.1.49/PS-Classic-Store-USB-0.1.49.zip)
 
 There is **one ZIP**. Its `Apps/` folder is ready to drag onto the root of an AutoBleem USB drive. The ZIP includes the app and required third-party notices and source; it does not contain games, populated download catalogs, account cookies, kernel files, or Wi-Fi changes. An artwork lookup lets the app fetch ROM covers on demand.
 
@@ -31,7 +31,7 @@ Open **About** and press **Triangle** to check for a newer app version. If one i
 3. Extract the release ZIP to the **USB root**, merging its `Apps/` folder.
 4. Safely eject the drive, boot AutoBleem, and open **PS Classic Store** from Apps.
 
-Users with the updater can move to 0.1.48 directly from **About**, without copying the ZIP from a PC. The installed version appears on the About page.
+Users with the updater can move to 0.1.49 directly from **About**, without copying the ZIP from a PC. The installed version appears on the About page.
 
 ## Add Catalogs
 
