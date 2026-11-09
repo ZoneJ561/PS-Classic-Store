@@ -41,7 +41,3 @@ The ZIP includes blank catalog templates with column headers only. **No game ent
 
 - Follow the creator on Instagram: [@god1ynigga](https://www.instagram.com/god1ynigga/)
 - Support development: [Venmo](https://venmo.com/u/godlynigga)
-
-## About This Repository
-
-This is the public release page for PS Classic Store, similar to the [PKGi Enhanced release page](https://github.com/ZoneJ561/PKGi-Enhanced). The Store's own C/C++ source and build workflow are maintained separately. Corresponding source and licenses for the bundled third-party tools are included **inside the single release ZIP** at `Apps/PS Classic Store/third-party-source/`.
