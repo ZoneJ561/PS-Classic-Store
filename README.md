@@ -35,7 +35,54 @@ Users with the updater can move to 0.1.49 directly from **About**, without copyi
 
 ## Add Catalogs
 
-The ZIP includes blank catalog templates with column headers only. **No downloadable game entries are preloaded.** Add your own TSV files under `System/PS Classic Store/sources/` on the USB, or add HTTPS TSV URLs under `System/PS Classic Store/sources.d/`. Game lists and downloaded content in `System/PS Classic Store` are kept when the app updates.
+The ZIP includes blank catalog templates with column headers only. **No downloadable game entries are preloaded.** Add your own TSV files under `System/PS Classic Store/sources/` on the USB. The app copies missing templates there on first launch; edit the copies under `sources/`, not the originals under `Apps/`. Keep the TSV header and use the matching `System` value in each row.
+
+| TSV template | Store category / system |
+| --- | --- |
+| `super-nintendo-roms.tsv` | Super Nintendo |
+| `sega-genesis-mega-drive-roms.tsv` | Sega Genesis / Mega Drive |
+| `sega-cd-roms.tsv` | Sega CD |
+| `nes-roms.tsv` | NES |
+| `game-boy-roms.tsv` | Game Boy |
+| `game-boy-color-roms.tsv` | Game Boy Color |
+| `game-boy-advance-roms.tsv` | Game Boy Advance |
+| `sega-master-system-roms.tsv` | Sega Master System |
+| `game-gear-roms.tsv` | Game Gear |
+| `sega-32x-roms.tsv` | Sega 32X |
+| `turbografx-16-pc-engine-roms.tsv` | TurboGrafx-16 / PC Engine |
+| `arcade-roms.tsv` | General arcade |
+| `capcom-play-system-1-roms.tsv` | Capcom Play System 1 |
+| `capcom-play-system-2-roms.tsv` | Capcom Play System 2 |
+| `capcom-play-system-3-roms.tsv` | Capcom Play System 3 |
+| `snk-neo-geo-mvs-roms.tsv` | SNK Neo Geo MVS |
+| `konami-roms.tsv` | Konami arcade |
+| `midway-williams-roms.tsv` | Midway/Williams arcade |
+| `sega-arcade-hardware-roms.tsv` | Sega arcade hardware |
+| `namco-roms.tsv` | Namco arcade |
+| `data-east-roms.tsv` | Data East arcade |
+| `taito-roms.tsv` | Taito arcade |
+
+Arcade categories all install into `RetroArch/roms/Arcade/`. Arcade ZIPs must contain a complete ROM set compatible with the selected RetroArch core. A clone-only ZIP may need its matching parent set; a non-merged set includes the required files in one ZIP.
+
+To have the Classic fetch hosted TSV updates automatically, put a `.txt` file in `System/PS Classic Store/sources.d/` (or use `System/PS Classic Store/sources.txt`). Each line is a display name, a **tab character**, and a direct HTTPS link to a TSV file, for example:
+
+```text
+My NES catalog	https://example.org/nes-roms.tsv
+My arcade catalog	https://example.org/arcade-roms.tsv
+```
+
+The store reads up to 32 feeds and refreshes them when it opens. Catalogs, covers, downloads, and private settings under `System/PS Classic Store/` are kept when the app updates. Use links and content you are authorized to access.
+
+## Archive.org account cookies
+
+Public Archive.org files need no account cookie. If your Archive.org account is allowed to download a restricted item:
+
+1. Sign in to `archive.org` in a browser on your trusted Windows PC.
+2. Export **only the Archive.org cookies** to a Netscape `cookies.txt` format file using a tool you trust. A browser's JSON cookie export is not the format this app reads.
+3. Rename the file `archive-cookies.txt` and copy it to the AutoBleem USB at `System/PS Classic Store/private/archive-cookies.txt`. Create the `private` folder if it is not present.
+4. Safely eject the USB and reopen PS Classic Store. The app sends this cookie file only when downloading from Archive.org. An expired cookie or an item your account cannot access can still fail.
+
+The cookie file contains an account session token in plain text. Keep it off public catalogs, releases, screenshots, and shared ZIPs. Remove it from the USB when you no longer need it. The app does not need your Archive.org password.
 
 ## Project Updates and Support
 
