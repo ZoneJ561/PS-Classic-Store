@@ -6,9 +6,9 @@ PS Classic Store is a catalog browser and downloader for the PlayStation Classic
 
 ## Download
 
-[Download PS Classic Store 0.1.46 for USB](https://github.com/ZoneJ561/PS-Classic-Store/releases/download/v0.1.46/PS-Classic-Store-USB-0.1.46.zip)
+[Download PS Classic Store 0.1.47 for USB](https://github.com/ZoneJ561/PS-Classic-Store/releases/download/v0.1.47/PS-Classic-Store-USB-0.1.47.zip)
 
-There is **one ZIP**. Its `Apps/` folder is ready to drag onto the root of an AutoBleem USB drive. The ZIP includes the app and required third-party notices and source; it does not contain games, populated game lists, account cookies, kernel files, or Wi-Fi changes.
+There is **one ZIP**. Its `Apps/` folder is ready to drag onto the root of an AutoBleem USB drive. The ZIP includes the app and required third-party notices and source; it does not contain games, populated download catalogs, account cookies, kernel files, or Wi-Fi changes. An artwork lookup lets the app fetch ROM covers on demand.
 
 ## Built-in App Updates
 
@@ -17,7 +17,7 @@ Open **About** and press **Triangle** to check for a newer app version. If one i
 ## Features
 
 - Browse separate **NPS PSX**, **PSX Games**, **ROMs**, **Apps**, **Installed**, **Sources**, and **Packages** sections.
-- Search listings, filter regions and ROM systems, and view game details and cover art.
+- Search listings, filter regions and ROM systems, and view game details and cover art. ROMs use 3D box, cabinet, cartridge, or front-cover art from the [LaunchBox Games Database](https://gamesdb.launchbox-app.com/) when available. NPS and PSX games keep the PlayStation CD case look.
 - Download PS1 disc archives, catalog ROMs, apps, and emulators from user-supplied HTTPS TSV feeds.
 - Queue downloads, follow progress, and cancel an active job.
 - Convert supported PS1 packages to BIN/CUE files for AutoBleem.
@@ -31,11 +31,11 @@ Open **About** and press **Triangle** to check for a newer app version. If one i
 3. Extract the release ZIP to the **USB root**, merging its `Apps/` folder.
 4. Safely eject the drive, boot AutoBleem, and open **PS Classic Store** from Apps.
 
-Users who already have 0.1.45 can update to 0.1.46 directly from **About**, without copying the ZIP from a PC. The installed version appears on the About page.
+Users with the updater can move to 0.1.47 directly from **About**, without copying the ZIP from a PC. The installed version appears on the About page.
 
 ## Add Catalogs
 
-The ZIP includes blank catalog templates with column headers only. **No game entries are preloaded.** Add your own TSV files under `System/PS Classic Store/sources/` on the USB, or add HTTPS TSV URLs under `System/PS Classic Store/sources.d/`. Game lists and downloaded content in `System/PS Classic Store` are kept when the app updates.
+The ZIP includes blank catalog templates with column headers only. **No downloadable game entries are preloaded.** Add your own TSV files under `System/PS Classic Store/sources/` on the USB, or add HTTPS TSV URLs under `System/PS Classic Store/sources.d/`. Game lists and downloaded content in `System/PS Classic Store` are kept when the app updates.
 
 ## Project Updates and Support
 
