@@ -36,6 +36,8 @@ Users with the updater can move to 0.1.57 directly from **About**, without copyi
 
 ## Add Catalogs
 
+Use [PS Classic Store Catalog Creator](https://github.com/ZoneJ561/PS-Classic-Store-Catalog-Creator) to create the TSV catalogs that PS Classic Store reads. The Store does not ship with populated game or app lists; you must make and add your own catalogs.
+
 The ZIP includes blank catalog templates with column headers only. **No downloadable game entries are preloaded.** Every shipped TSV is a header-only catalog template. Artwork matching data is stored separately in `.idx` files and contains no game download catalog. Add your own TSV files under `System/PS Classic Store/sources/` on the USB. The app copies missing templates there on first launch; edit the copies under `sources/`, not the originals under `Apps/`. Keep the TSV header and use the matching `System` value in each row.
 
 | TSV template | Store category / system |
@@ -79,6 +81,10 @@ My arcade catalog	https://example.org/arcade-roms.tsv
 ```
 
 The store reads up to 32 feeds and refreshes them when it opens. Catalogs, covers, downloads, and private settings under `System/PS Classic Store/` are kept when the app updates. Use links and content you are authorized to access.
+
+## Authorized Use
+
+**I do not condone piracy in any way.** Create catalogs and use the Store only for games and apps you have permission to access, download, and use. You are responsible for the content and links you add.
 
 ## Archive.org account cookies
 
