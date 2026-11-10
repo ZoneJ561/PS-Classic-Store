@@ -6,7 +6,7 @@ PS Classic Store is a catalog browser and downloader for the PlayStation Classic
 
 ## Download
 
-[Download PS Classic Store 0.1.50 for USB](https://github.com/ZoneJ561/PS-Classic-Store/releases/download/v0.1.50/PS-Classic-Store-USB-0.1.50.zip)
+[Download PS Classic Store 0.1.51 for USB](https://github.com/ZoneJ561/PS-Classic-Store/releases/download/v0.1.51/PS-Classic-Store-USB-0.1.51.zip)
 
 There is **one ZIP**. Its `Apps/` folder is ready to drag onto the root of an AutoBleem USB drive. The ZIP includes the app and required third-party notices and source; it does not contain games, populated download catalogs, account cookies, kernel files, or Wi-Fi changes. An artwork lookup lets the app fetch ROM covers on demand.
 
@@ -20,7 +20,7 @@ Open **About** and press **Triangle** to check for a newer app version. If one i
 - Search listings, filter regions and ROM systems, and view game details and cover art. ROMs use 3D box, cabinet, cartridge, or front-cover art from the [LaunchBox Games Database](https://gamesdb.launchbox-app.com/) when available. NPS and PSX games can display region-matched 3D CD box art supplied in the catalog; other covers remain available as a fallback. Older emulator entries appear under Apps.
 - Download PS1 disc archives, catalog ROMs, and apps from user-supplied HTTPS TSV feeds.
 - Queue downloads, follow progress, and cancel an active job.
-- Unpack ZIP, 7z, and RAR ROM archives with visible install progress, and delete installed ROMs from the Installed tab with confirmation.
+- Show only ROM systems with games in a local or refreshed catalog; empty TSV templates stay hidden. Unpack ZIP, 7z, and RAR ROM archives with visible install progress, and delete installed ROMs from the Installed tab with confirmation.
 - Convert supported PS1 packages to BIN/CUE files for AutoBleem.
 - Support up to 32 catalog feeds. Catalog URLs refresh when the app opens.
 - Stage and verify downloads before installing them. Existing game and app folders are protected from silent replacement.
@@ -32,7 +32,7 @@ Open **About** and press **Triangle** to check for a newer app version. If one i
 3. Extract the release ZIP to the **USB root**, merging its `Apps/` folder.
 4. Safely eject the drive, boot AutoBleem, and open **PS Classic Store** from Apps.
 
-Users with the updater can move to 0.1.50 directly from **About**, without copying the ZIP from a PC. The installed version appears on the About page.
+Users with the updater can move to 0.1.51 directly from **About**, without copying the ZIP from a PC. The installed version appears on the About page.
 
 ## Add Catalogs
 
